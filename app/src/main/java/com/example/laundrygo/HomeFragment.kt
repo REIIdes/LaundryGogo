@@ -79,7 +79,3 @@ class HomeFragment : Fragment() {
         transaction.commit() // Commit the transaction to apply the change
     }
 }
-
-
-
-

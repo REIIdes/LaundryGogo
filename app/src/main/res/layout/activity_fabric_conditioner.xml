@@ -5,172 +5,273 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".FabricConditionerActivity">
+    tools:context=".SoapActivity">
 
-    <TextView
-        android:id="@+id/selectedSoapTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fabric Conditioners"
-        android:textColor="#8D011C"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="47dp"
         android:layout_height="31dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/back"
-        app:layout_constraintEnd_toStartOf="@+id/selectedSoapTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Downy -->
+    <!-- Title -->
     <LinearLayout
-        android:id="@+id/fabric1"
-        android:layout_width="351dp"
-        android:layout_height="172dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="285dp"
+        android:layout_height="55dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/matcha2"
-        android:clickable="true"
-        android:elevation="6dp"
-        android:focusable="true"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectedSoapTextView">
-
-        <ImageView
-            android:layout_width="112dp"
-            android:layout_height="123dp"
-            android:src="@drawable/down" />
+        app:layout_constraintTop_toBottomOf="@id/backButton">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DOWNY"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₱15"
-            android:textSize="14sp"
-            android:textColor="@android:color/holo_green_dark" />
+            android:text="Choose your\nfabric conditioner"
+            android:textColor="#8D011C"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center" />
     </LinearLayout>
 
-    <!-- Champion -->
-    <LinearLayout
+
+    <ImageView
+        android:id="@+id/fabric1"
+        android:layout_width="178dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageFabric1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/downy"
+        app:layout_constraintEnd_toEndOf="@id/fabric1"
+        app:layout_constraintStart_toStartOf="@id/fabric1"
+        app:layout_constraintTop_toTopOf="@id/fabric1" />
+
+    <TextView
+        android:id="@+id/textFabric1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="DOWNY"
+        android:textColor="#E74B28"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric1"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric1" />
+
+    <TextView
+        android:id="@+id/priceFabric1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="₱15.00"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/fabric1"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric1" />
+
+
+    <TextView
+        android:id="@+id/weightFabric1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="80g"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric1"
+        app:layout_constraintTop_toBottomOf="@id/textFabric1" />
+
+    <ImageView
         android:id="@+id/fabric2"
-        android:layout_width="351dp"
-        android:layout_height="172dp"
-        android:layout_marginTop="204dp"
-        android:background="@drawable/matcha2"
-        android:clickable="true"
-        android:elevation="6dp"
-        android:focusable="true"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:layout_width="178dp"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectedSoapTextView">
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        android:layout_marginTop="16dp" />
 
-        <ImageView
-            android:layout_width="112dp"
-            android:layout_height="123dp"
-            android:src="@drawable/champ" />
+    <ImageView
+        android:id="@+id/imageFabric2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/champion"
+        app:layout_constraintEnd_toEndOf="@id/fabric2"
+        app:layout_constraintStart_toStartOf="@id/fabric2"
+        app:layout_constraintTop_toTopOf="@id/fabric2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CHAMPION"
-            android:textSize="16sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₱15"
-            android:textSize="14sp"
-            android:textColor="@android:color/holo_green_dark" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textFabric2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text=" CHAMPION"
+        android:textColor="#921D25"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric2"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric2" />
 
-    <!-- Del -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/weightFabric2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="80g"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric2"
+        app:layout_constraintTop_toBottomOf="@id/textFabric2" />
+
+    <TextView
+        android:id="@+id/priceFabric2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="₱15.00"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/fabric2"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric2" />
+
+
+    <ImageView
         android:id="@+id/fabric3"
-        android:layout_width="351dp"
-        android:layout_height="172dp"
-        android:layout_marginTop="400dp"
-        android:background="@drawable/matcha2"
-        android:clickable="true"
-        android:elevation="6dp"
-        android:focusable="true"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="178dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectedSoapTextView">
+        app:layout_constraintTop_toBottomOf="@id/fabric1"
+        app:srcCompat="@drawable/background" />
 
-        <ImageView
-            android:layout_width="112dp"
-            android:layout_height="123dp"
-            android:src="@drawable/del" />
+    <ImageView
+        android:id="@+id/imageFabric3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/del"
+        app:layout_constraintStart_toStartOf="@id/fabric3"
+        app:layout_constraintTop_toTopOf="@id/fabric3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DEL"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textFabric3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="DEL"
+        android:textColor="#CCBF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric3"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₱15"
-            android:textSize="14sp"
-            android:textColor="@android:color/holo_green_dark" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/weightFabric3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="80g"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric3"
+        app:layout_constraintTop_toBottomOf="@id/textFabric3" />
 
-    <!-- Surf -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/priceFabric3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="₱21.00"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/fabric3"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric3" />
+
+    <ImageView
         android:id="@+id/fabric4"
-        android:layout_width="351dp"
-        android:layout_height="172dp"
-        android:layout_marginTop="592dp"
-        android:background="@drawable/matcha2"
-        android:clickable="true"
-        android:elevation="6dp"
-        android:focusable="true"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:layout_width="178dp"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/selectedSoapTextView">
+        app:layout_constraintTop_toBottomOf="@id/fabric2"
+        android:layout_marginTop="16dp" />
 
-        <ImageView
-            android:layout_width="112dp"
-            android:layout_height="123dp"
-            android:src="@drawable/surf" />
+    <ImageView
+        android:id="@+id/imageFabric4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fabricsurf"
+        app:layout_constraintEnd_toEndOf="@id/fabric4"
+        app:layout_constraintStart_toStartOf="@id/fabric4"
+        app:layout_constraintTop_toTopOf="@id/fabric4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SURF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textFabric4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="SURF"
+        android:textColor="#378F26"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric4"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="₱15"
-            android:textSize="14sp"
-            android:textColor="@android:color/holo_green_dark" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/priceFabric4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="₱15.00"
+        android:textColor="#000000"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/fabric4"
+        app:layout_constraintTop_toBottomOf="@id/imageFabric4" />
+
+    <TextView
+        android:id="@+id/weightFabric4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="80g"
+        android:textColor="#000000"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/fabric4"
+        app:layout_constraintTop_toBottomOf="@id/textFabric4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

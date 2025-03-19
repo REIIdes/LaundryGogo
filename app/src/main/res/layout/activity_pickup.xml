@@ -2,207 +2,252 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pickupActivity">
 
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/backButton"
-        android:layout_width="47dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textdate"
-        android:layout_width="157dp"
-        android:layout_height="28dp"
-        android:text="Date"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/etDate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="154dp"
-        android:layout_height="47dp"
-        android:text="FOR PICK-UP"
-        android:textColor="#8D011C"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
 
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="235dp"
-        android:layout_height="65dp"
-        android:backgroundTint="#8D011C"
-        android:text="Confirm"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+    <!-- Title -->
 
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="219dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="4dp"
-        android:timePickerMode="spinner"
-        app:layout_constraintBottom_toTopOf="@+id/etfullname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-
-        app:layout_constraintStart_toEndOf="@+id/etDate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
-
-    <EditText
-        android:id="@+id/etDate"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="184dp"
-        android:background="@drawable/edittext_border"
-        android:hint="MM//DD/YY"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etfullname"
-        android:layout_width="342dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="292dp"
-        android:background="@drawable/edittext_border"
-
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!-- Date and Time -->
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="157dp"
-        android:layout_height="28dp"
-        android:text="Pick-up Address"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/etfullname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDate"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/tvTotalCost"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp"
-        android:text="Total Cost: PHP 0"
-        android:textSize="18sp"
+        android:layout_marginTop="76dp"
+        android:text="FOR PICK-UP"
+        android:textColor="#8D011C"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etfullname" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvpayment"
-        android:layout_width="182dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When do you want to pick up your laundry?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+    </LinearLayout>
+
+    <!-- Pickup Address -->
+
+    <!-- Total Cost -->
+
+    <!-- Payment Method -->
+
+    <TextView
+        android:id="@+id/tvPickupAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pick-up Address"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDate" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:hint="LAUNDRIGO SHOP"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPickupAddress" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddress" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="₱250"
+        android:textColor="#00C853"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tvTotal"
+        app:layout_constraintTop_toBottomOf="@id/etAddress" />
+
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Select payment method:"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvTotal" />
 
-    <FrameLayout
-        android:id="@+id/flCash"
-        android:layout_width="166dp"
-        android:layout_height="148dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvcash"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvpayment">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentMethod">
 
-        <ImageView
-            android:id="@+id/ivcash"
-            android:layout_width="167dp"
-            android:layout_height="136dp"
-            android:src="@drawable/cash" />
-    </FrameLayout>
+        <!-- G-Cash -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"></LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/flGcash"
-        android:layout_width="166dp"
-        android:layout_height="148dp"
+        <!-- Cash -->
+    </LinearLayout>
+
+    <!-- Confirm Button -->
+
+    <ImageView
+        android:id="@+id/ivGcash"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:src="@drawable/gcash"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627">
+        app:layout_constraintVertical_bias="0.658" />
 
-        <ImageView
-            android:id="@+id/ivgcash"
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:src="@drawable/gcash" />
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="215dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_border"
+        android:hint="mm/dd/yy"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
 
-    </FrameLayout>
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:hint="12:00 PM"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <ImageView
+        android:id="@+id/ivCash"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:src="@drawable/cash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
 
     <TextView
-        android:id="@+id/tvcash"
-        android:layout_width="65dp"
-        android:layout_height="47dp"
-        android:text="CASH"
-        android:textSize="23sp"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:text="G-Cash"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="0.303"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.755" />
 
     <TextView
-        android:id="@+id/tvgcash"
-        android:layout_width="80dp"
-        android:layout_height="38dp"
-        android:text="GCASH"
-        android:textSize="23sp"
+        android:id="@+id/textView4"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintVertical_bias="0.755" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#8D011C"
+        android:text="Confirm"
+        android:textSize="18dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

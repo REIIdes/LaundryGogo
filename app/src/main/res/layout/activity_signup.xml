@@ -33,12 +33,9 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
+        app:layout_constraintVertical_bias="0.293" />
 
     <!-- Email -->
-
-    <!-- Name -->
-
     <EditText
         android:id="@+id/editTextAddress"
         android:layout_width="347dp"
@@ -53,6 +50,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.453" />
 
+    <!-- Name -->
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="347dp"
@@ -73,7 +71,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/edittext_border"
-        android:hint="Password"
+        android:hint="Address"
         android:padding="12dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +85,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/edittext_border"
-        android:hint="Confirm Password"
+        android:hint="Password"
         android:padding="12dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,11 +95,13 @@
     <!-- Signup Button -->
     <Button
         android:id="@+id/buttonSignup"
-        android:layout_width="223dp"
-        android:layout_height="49dp"
+        android:layout_width="340dp"
+        android:layout_height="65dp"
         android:layout_marginTop="28dp"
         android:backgroundTint="#8D011C"
         android:text="Sign Up"
+        android:textSize="18dp"
+        app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword" />
@@ -121,8 +121,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="Already have an account?"
+            android:text="Already have an account? "
             android:textSize="14sp" />
 
         <TextView
@@ -131,9 +130,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
-            android:padding="8dp"
             android:text="Sign in"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="#8D011C"
             android:textSize="14sp" />
     </LinearLayout>
 

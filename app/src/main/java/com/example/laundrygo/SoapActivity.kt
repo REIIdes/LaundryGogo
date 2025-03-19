@@ -15,15 +15,16 @@ class SoapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soap)
 
+        // Map the ImageView IDs instead of LinearLayout IDs
         val soapOptions = mapOf(
-            R.id.linearLayout2 to "TIDE",
-            R.id.linearLayout3 to "BREEZE",
-            R.id.linearLayout4 to "SURF",
-            R.id.linearLayout to "ARIEL"
+            R.id.imageTide to "TIDE",
+            R.id.imageBreeze to "BREEZE",
+            R.id.imageSurf to "SURF",
+            R.id.imageAriel to "ARIEL"
         )
 
-        soapOptions.forEach { (layoutId, soapName) ->
-            findViewById<View>(layoutId).setOnClickListener {
+        soapOptions.forEach { (imageId, soapName) ->
+            findViewById<ImageView>(imageId).setOnClickListener {
                 showQuantityDialog(soapName)
             }
         }
@@ -77,7 +78,7 @@ class SoapActivity : AppCompatActivity() {
     private fun navigateToFabricConditioner(selectedSoap: String, soapQuantity: Int) {
         val intent = Intent(this, FabricConditionerActivity::class.java).apply {
             putExtra("selectedSoap", selectedSoap)
-            putExtra("soapQuantity", soapQuantity) // ✅ Ensure quantity is passed correctly
+            putExtra("soapQuantity", soapQuantity)
         }
         startActivity(intent)
     }

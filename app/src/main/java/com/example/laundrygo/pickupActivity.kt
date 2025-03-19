@@ -32,7 +32,7 @@ class pickupActivity : AppCompatActivity() {
         btnConfirm = findViewById(R.id.buttonLogin)
         ivGcash = findViewById(R.id.ivgcash)
         ivCash = findViewById(R.id.ivcash)
-        tvTotalCost = findViewById(R.id.tvTotalCost)
+        //tvTotalCost = findViewById(R.id.tvTotalCost)
 
         // Retrieve total cost from Intent
         totalCost = intent.getIntExtra("TOTAL_COST", 0)
