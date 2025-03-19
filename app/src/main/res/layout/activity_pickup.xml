@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pickupActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:text="Date"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:text="FOR PICK-UP"
+        android:textColor="#8D011C"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="235dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#8D011C"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="219dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="4dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/etfullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toEndOf="@+id/etDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/edittext_border"
+        android:hint="MM//DD/YY"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etfullname"
+        android:layout_width="342dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/edittext_border"
+
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="157dp"
+        android:layout_height="28dp"
+        android:text="Pick-up Address"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/etfullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="Total Cost: PHP 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfullname" />
+
+    <TextView
+        android:id="@+id/tvpayment"
+        android:layout_width="182dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="400dp"
+        android:text="Select payment method:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/flCash"
+        android:layout_width="166dp"
+        android:layout_height="148dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvcash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpayment">
+
+        <ImageView
+            android:id="@+id/ivcash"
+            android:layout_width="167dp"
+            android:layout_height="136dp"
+            android:src="@drawable/cash" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flGcash"
+        android:layout_width="166dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627">
+
+        <ImageView
+            android:id="@+id/ivgcash"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/gcash" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvcash"
+        android:layout_width="65dp"
+        android:layout_height="47dp"
+        android:text="CASH"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <TextView
+        android:id="@+id/tvgcash"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:text="GCASH"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

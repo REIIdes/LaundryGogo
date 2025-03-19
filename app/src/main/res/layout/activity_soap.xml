@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SoapActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Choose your detergent"
+            android:textColor="#8D011C"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="351dp"
+        android:layout_height="180dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/matcha2"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="123dp"
+            android:contentDescription="Soap 3"
+            android:src="@drawable/breeze" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="BREEZE"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱21"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/matcha2"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="123dp"
+            android:contentDescription="Soap 2"
+            android:src="@drawable/ariel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ARIEL"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱15"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="351dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/matcha2"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="123dp"
+            android:contentDescription="Soap 4"
+            android:src="@drawable/surf2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="SURF"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱10"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="351dp"
+        android:layout_height="180dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/matcha2"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="112dp"
+            android:layout_height="123dp"
+            android:contentDescription="Soap 1"
+            android:src="@drawable/tide" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TIDE"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱15"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
