@@ -46,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintVertical_bias="0.167" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -70,7 +70,7 @@
         android:id="@+id/tvPickupAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="Pick-up Address"
         android:textColor="#000000"
         android:textSize="16sp"
@@ -169,7 +169,7 @@
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="215dp"
+        android:layout_width="130dp"
         android:layout_height="45dp"
         android:background="@drawable/edittext_border"
         android:hint="mm/dd/yy"
@@ -177,26 +177,18 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.244" />
 
-    <EditText
-        android:id="@+id/etTime"
-        android:layout_width="140dp"
-        android:layout_height="45dp"
-        android:background="@drawable/edittext_border"
-        android:gravity="center"
-        android:hint="12:00 PM"
-        android:padding="12dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:timePickerMode="spinner"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="131dp" />
 
     <ImageView
         android:id="@+id/ivCash"
